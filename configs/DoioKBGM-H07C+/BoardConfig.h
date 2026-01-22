@@ -114,28 +114,29 @@
 #define BUTTON_LAYOUT BUTTON_LAYOUT_BOARD_DEFINED_A
 #define BUTTON_LAYOUT_RIGHT BUTTON_LAYOUT_BOARD_DEFINED_B
 #define SPLASH_MODE SPLASH_MODE_STATIC
-#define SPLASH_DURATION 2000
+#define SPLASH_DURATION 2500
 #define DISPLAY_TURN_OFF_WHEN_SUSPENDED 1
 
 // BUTTON_GROUP_ARCADE_STICK
 // GP_SHAPE_PILL          // x,   y, offsetX,   sizeY, stroke,  state, pin, shape[, angle]
+// GP_SHAPE_PILL          //            x+10,    y+22,
 #define DEFAULT_BOARD_LAYOUT_A {\
-  {GP_ELEMENT_PIN_BUTTON, {  0,   18,     10,      40,      1,      1,   22, GP_SHAPE_PILL}},\
-  {GP_ELEMENT_LEVER,      { 29,   29,      9,       9,      1,      0,    0}},\
-  {GP_ELEMENT_PIN_BUTTON, { 22,   41,     32,      63,      1,      1,   13, GP_SHAPE_PILL, 90}},\
+  {GP_ELEMENT_PIN_BUTTON, {  0,   17,     10,      39,      1,      1,   22, GP_SHAPE_PILL}},\
+  {GP_ELEMENT_LEVER,      { 29,   28,      9,      9,       1,      0,    0}},\
+  {GP_ELEMENT_PIN_BUTTON, { 24,   41,     34,      63,      1,      1,   13, GP_SHAPE_PILL, 90}},\
 }
 
 // GP_SHAPE_ELLIPSE       // x,    y, radiusX, radiusY, stroke,  state, pin, shape
 #define DEFAULT_BOARD_LAYOUT_B {\
-  {GP_ELEMENT_PIN_BUTTON, { 59,   38,       6,       6,      1,      1,  23, GP_SHAPE_ELLIPSE}},\
-  {GP_ELEMENT_PIN_BUTTON, { 74,   31,       6,       6,      1,      1,  10, GP_SHAPE_ELLIPSE}},\
-  {GP_ELEMENT_PIN_BUTTON, { 89,   22,       6,       6,      1,      1,  11, GP_SHAPE_ELLIPSE}},\
-  {GP_ELEMENT_PIN_BUTTON, {104,   22,       6,       6,      1,      1,  12, GP_SHAPE_ELLIPSE}},\
-  {GP_ELEMENT_PIN_BUTTON, { 74,   46,       6,       6,      1,      1,   6, GP_SHAPE_ELLIPSE}},\
-  {GP_ELEMENT_PIN_BUTTON, { 89,   37,       6,       6,      1,      1,   7, GP_SHAPE_ELLIPSE}},\
-  {GP_ELEMENT_PIN_BUTTON, {104,   37,       6,       6,      1,      1,   8, GP_SHAPE_ELLIPSE}},\
-  {GP_ELEMENT_PIN_BUTTON, {113,   18,     123,      40,      1,      1,  25, GP_SHAPE_PILL}},\
-  {GP_ELEMENT_PIN_BUTTON, { 90,   41,     100,      63,      1,      1,   9, GP_SHAPE_PILL, 90}},\
+  {GP_ELEMENT_PIN_BUTTON, { 57,   37,       6,       6,      1,      1,  23, GP_SHAPE_ELLIPSE}},\
+  {GP_ELEMENT_PIN_BUTTON, { 72,   30,       6,       6,      1,      1,  10, GP_SHAPE_ELLIPSE}},\
+  {GP_ELEMENT_PIN_BUTTON, { 87,   21,       6,       6,      1,      1,  11, GP_SHAPE_ELLIPSE}},\
+  {GP_ELEMENT_PIN_BUTTON, {102,   21,       6,       6,      1,      1,  12, GP_SHAPE_ELLIPSE}},\
+  {GP_ELEMENT_PIN_BUTTON, { 72,   45,       6,       6,      1,      1,   6, GP_SHAPE_ELLIPSE}},\
+  {GP_ELEMENT_PIN_BUTTON, { 87,   36,       6,       6,      1,      1,   7, GP_SHAPE_ELLIPSE}},\
+  {GP_ELEMENT_PIN_BUTTON, {102,   36,       6,       6,      1,      1,   8, GP_SHAPE_ELLIPSE}},\
+  {GP_ELEMENT_PIN_BUTTON, {111,   17,     121,      39,      1,      1,  25, GP_SHAPE_PILL}},\
+  {GP_ELEMENT_PIN_BUTTON, { 89,   41,      99,      63,      1,      1,   9, GP_SHAPE_PILL, 90}},\
 }
 
 #endif
